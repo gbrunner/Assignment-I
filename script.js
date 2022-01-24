@@ -1,14 +1,10 @@
-      require(["esri/Map", "esri/views/MapView"], (Map, MapView) => {
-        const map = new Map({
-          basemap: "topo-vector"
-        });
+var map = L.map('mapid').setView([40,-75.1], 10);
 
-        const view = new MapView({
-          container: "viewDiv",
-          map: map,
-          zoom: 13,
-          center: [-90.2, 38.6] // longitude, latitude
-        });
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 10,
+  minZoom:8,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
        
 var theGrove=L.marker([-90.25434454458241,38.627400228141404]).addTo(map).bindPopup('Sultan Mediterranean Restaurant').openOn(map);
         
