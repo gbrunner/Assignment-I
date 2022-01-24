@@ -15,4 +15,3 @@ var southcounty=L.marker([-90.37811280225854,38.50434951523715]).addTo(map).bind
 var soulard=L.marker([-90.2054408157469,38.60893358482006]).addTo(map).bindPopup('Chava’s Mexican Restaurant').openOn(map);
 
 var thehill=L.marker([-90.2686562482886,38.61667495683198]).addTo(map).bindPopup('Rigazzi’s Italian Restaurant').openOn(map);
-      });
